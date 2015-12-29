@@ -3,7 +3,7 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta{:charset => "utf-8"}/
-    %title Pairings
+    %title Reveal.js
     %meta{:content => "A framework for easily creating beautiful presentations using HTML", :name => "description"}/
     %meta{:content => "Hakim El Hattab", :name => "author"}/
     %meta{:content => "yes", :name => "apple-mobile-web-app-capable"}/
@@ -30,18 +30,25 @@
           %section
             %h1{:style=> "text-align: center; color: white;"} REVEAL.JS
             %br
-            %p{:style => "text-align: left; font-size: 30px; line-height: 10px;"} Team Members: 林良憲、郭至煜、謝佳恩
-            %p{:style => "text-align: left; font-size: 30px; line-height: 10px;"} Adviser: 林楚迪
-            %p{:style => "text-align: left; font-size: 30px; line-height: 10px;"} Data: 2016/01/06
+            %p{:style => "text-align: left; font-size: 30px; line-height: 20px;"} Team Members: 林良憲、郭至煜、謝佳恩
+            %p{:style => "text-align: left; font-size: 30px; line-height: 20px;"} Adviser: 林楚迪
+            %p{:style => "text-align: left; font-size: 30px; line-height: 20px;"} Data: 2016/01/06
           %section
-            %h2{:style=> "color: orange;"} 
+            %h2{:style=> "color: green;"} 
               introduction
             %ol
-              %li Html
-              %li Haml
-              %li Reveal.js
-              %li Github.io
-              %li Faced Problem 
+              %li 
+                Html + CSS + reveal.js Relations
+              %li 
+                Html
+              %li
+                Haml
+              %li 
+                Reveal.js
+              %li 
+                Github.io
+              %li 
+                Faced Problem 
           %section
             %h1 setting
             %a{:href=> "?transition=none#/transitions"} None
@@ -79,42 +86,167 @@
             %a{:href=> "#", :onclick => "document.getElementById('theme').setAttribute('href','./css/theme/solarized.css'); return false;"} Solarized
         %section
           %section
-            %h1 Html
+            %h2 Html + CSS + Reveal.js 
+            %h2 Relations
+          %section
+            %img{"data-src"=> "Relation.PNG"}
+        %section
           %section
             %h1 Html
-            %ul
-              %li 
-                由許多標籤組合
-              %li 
+          %section
+            %h1 基礎語法
+            %table
+              %thead
+                %tr
+                  %th Syntax
+                  %th Purpose
+              %tbody
+                %tr 
+                  %td &#060; h1 &#062;...&#060; /h1 &#062;
+                  %td 標題
+                %tr
+                  %td &#060; p &#062;...&#060; /p &#062;
+                  %td 一行
+                %tr
+                  %td &#060; span &#062;
+                  %td 不換行
+                %tr
+                  %td &#060; ol &#062;...&#060; /ol &#062;
+                  %td 有數字的list
+                %tr
+                  %td &#060; ul &#062;...&#060; /ul &#062;
+                  %td 無數字的list
+                %tr
+                  %td &#060; li &#062;...&#060; /li &#062;
+                  %td list中的選項
+                %tr
+                  %td &#060; a &#062;...&#060; /a &#062;
+                  %td list中的選項
+          %section
+            %h1 進階語法
+            %table
+              %thead
+                %tr
+                  %th Syntax
+                  %th Purpose
+              %tbody
+                %tr
+                  %td &#060; section &#062;
+                  %td 每一頁面(or章節)
+                %tr
+                  %td &#060; table &#062;
+                  %td 製作表格
+                %tr
+                  %td &#060; thead &#062;
+                  %td 表格內的所有標頭
+                %tr
+                  %td &#060; th &#062;
+                  %td 每一個標頭
+                %tr
+                  %td &#060; tbody &#062;
+                  %td 表格內所有內容
+                %tr
+                  %td &#060; tr &#062;
+                  %td 以橫列顯示表格內容
+                %tr
+                  %td &#060; td &#062;
+                  %td 每一格的內容
 
-                段落組成 &#060; p &#062; ... &#060; /p &#062;
-              %li 
-                超連結   &#060; a &#062; ... &#060; /a &#062;
-              %li 
-                標題   &#060; h1 &#062; ... &#060; /h1 &#062;   
-              %li 
-                有數字的目錄  &#060; ol &#062; ... &#060; /ol &#062;
-              %li 
-                無數字的目錄 &#060; ul &#062; ... &#060; /ul &#062;
-              %li 
-                目錄中的選項 &#060; li &#062; ... &#060; /li &#062;
         %section
           %section 
             %h1 haml
           %section
-            %h1 Haml
+            %h1 haml
             %ul{:style=> "text-align: left;"}
               %li 
                 以Ruby環境寫出
               %li 
-                優點: 快速編寫html
-              %li
-                技巧 
-                %ol 
-                  %li 
-                    利用縮排
-                  %li 
-                    利用%代替<>
+                快速編寫html(縮排、%)
+          %section
+            %p{:style=> "color: orange; font-size: 48px;"} Demo code
+            %img{"data-src"=> "Hamldemocode.PNG"}
+          %section
+            %p{:style=> "color: orange; font-size: 48px;"} Demo code
+            %div{:style=>"float: left; width: 45%;"}
+              %pre
+                %code
+                  =preserve do
+                    :escaped
+                      %h1 進階語法
+                      %table
+                        %thead
+                          %tr
+                            %th Syntax
+                            %th Purpose
+                        %tbody
+                          %tr
+                            %td &#060; section &#062;
+                            %td 每一頁面(or章節)
+                          %tr
+                            %td &#060; table &#062;
+                            %td 製作表格
+                          %tr
+                            %td &#060; thead &#062;
+                            %td 表格內的所有標頭
+                          %tr
+                            %td &#060; th &#062;
+                            %td 每一個標頭
+                          %tr
+                            %td &#060; tbody &#062;
+                            %td 表格內所有內容
+                          %tr
+                            %td &#060; tr &#062;
+                            %td 以橫列顯示表格內容
+                          %tr
+                            %td &#060; td &#062;
+                            %td 每一格的內容   
+            %div{:style=>"float: right; width: 55%;"}
+              %pre
+                %code
+                  =preserve do
+                    :escaped
+                      <h1>進階語法</h1>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Syntax</th>
+                            <th>Purpose</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>&#060; section &#062;</td>
+                            <td>每一頁面(or章節)</td>
+                          </tr>
+                          <tr>
+                            <td>&#060; table &#062;</td>
+                            <td>製作表格</td>
+                          </tr>
+                          <tr>
+                            <td>&#060; thead &#062;</td>
+                            <td>表格內的所有標頭</td>
+                          </tr>
+                          <tr>
+                            <td>&#060; th &#062;</td>
+                            <td>每一個標頭</td>
+                          </tr>
+                          <tr>
+                            <td>&#060; tbody &#062;</td>
+                            <td>表格內所有內容</td>
+                          </tr>
+                          <tr>
+                            <td>&#060; tr &#062;</td>
+                            <td>以橫列顯示表格內容</td>
+                          </tr>
+                          <tr>
+                            <td>&#060; td &#062;</td>
+                            <td>每一格的內容</td>
+                          </tr>
+                        </tbody>
+                      </table>
+          %section
+            %h2{:style=> "color: orange;"} How to install haml
+
         %section
           %section
             %h1 reveal.js
@@ -122,14 +254,36 @@
             %h1 reveal.js
             %ul
               %li 
-                It's free (open source)
+                It's open source
               %li 
                 提供比ppt更多樣化的捲動方式(轉場效果)
               %li
                 講者可以更節省時間的在投影片上顯示出編排的很漂亮的程式片段
               %li
                 就是用Html來做網頁式的簡報!
-          
+          %section
+            %p{:style=> "color: orange; font-size: 48px;"} Now, Let's view the effect of reveal.js
+          %section
+            %h1{:style=> "color: orange;"} Down
+            %p{:style=> "font-size: 48px;"} 垂直向的下一頁
+            %img{"data-src"=>"arrowdown.png"}
+          %section
+            %h1{:style=> "color: orange;"} Up
+            %p{:style=> "font-size: 48px;"} 垂直向的上一頁
+            %img{"data-src"=>"arrowup.png"}
+          %section
+            %h1{:style=> "color: orange;"} left / right
+            %p
+              %span{:style=> "font-size: 48px;"} 翻至左/右行
+              %span{:style=> "color: red; font-size: 48px;"} 最近一次
+              %span{:style=> "font-size: 48px;"} 瀏覽的頁面
+            %p
+              %span{:style=> "font-size: 48px;"} 若未瀏覽過則翻至左/右行
+              %span{:style=> "color:red; font-size: 48px;"} 最上頁
+            %div{:style=> "float: left; width: 50%;"}
+              %img{"data-src"=> "arrowleft.png"}
+            %div{:style=> "float: right; width: 50%;"}
+              %img{"data-src"=> "arrowright.png"}
         %section
           %section
             %h1 github.io

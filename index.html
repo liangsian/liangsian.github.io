@@ -3,7 +3,7 @@
   <head>
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
     <meta charset='utf-8'>
-    <title>Pairings</title>
+    <title>Reveal.js</title>
     <meta content='A framework for easily creating beautiful presentations using HTML' name='description'>
     <meta content='Hakim El Hattab' name='author'>
     <meta content='yes' name='apple-mobile-web-app-capable'>
@@ -33,20 +33,33 @@
           <section>
             <h1 style='text-align: center; color: white;'>REVEAL.JS</h1>
             <br>
-            <p style='text-align: left; font-size: 30px; line-height: 10px;'>Team Members: 林良憲、郭至煜、謝佳恩</p>
-            <p style='text-align: left; font-size: 30px; line-height: 10px;'>Adviser: 林楚迪</p>
-            <p style='text-align: left; font-size: 30px; line-height: 10px;'>Data: 2016/01/06</p>
+            <p style='text-align: left; font-size: 30px; line-height: 20px;'>Team Members: 林良憲、郭至煜、謝佳恩</p>
+            <p style='text-align: left; font-size: 30px; line-height: 20px;'>Adviser: 林楚迪</p>
+            <p style='text-align: left; font-size: 30px; line-height: 20px;'>Data: 2016/01/06</p>
           </section>
           <section>
-            <h2 style='color: orange;'>
+            <h2 style='color: green;'>
               introduction
             </h2>
             <ol>
-              <li>Html</li>
-              <li>Haml</li>
-              <li>Reveal.js</li>
-              <li>Github.io</li>
-              <li>Faced Problem</li>
+              <li>
+                Html + CSS + reveal.js Relations
+              </li>
+              <li>
+                Html
+              </li>
+              <li>
+                Haml
+              </li>
+              <li>
+                Reveal.js
+              </li>
+              <li>
+                Github.io
+              </li>
+              <li>
+                Faced Problem
+              </li>
             </ol>
           </section>
           <section>
@@ -88,33 +101,98 @@
         </section>
         <section>
           <section>
+            <h2>Html + CSS + Reveal.js</h2>
+            <h2>Relations</h2>
+          </section>
+          <section>
+            <img data-src='Relation.PNG'>
+          </section>
+        </section>
+        <section>
+          <section>
             <h1>Html</h1>
           </section>
           <section>
-            <h1>Html</h1>
-            <ul>
-              <li>
-                由許多標籤組合
-              </li>
-              <li>
-                段落組成 &#060; p &#062; ... &#060; /p &#062;
-              </li>
-              <li>
-                超連結   &#060; a &#062; ... &#060; /a &#062;
-              </li>
-              <li>
-                標題   &#060; h1 &#062; ... &#060; /h1 &#062;
-              </li>
-              <li>
-                有數字的目錄  &#060; ol &#062; ... &#060; /ol &#062;
-              </li>
-              <li>
-                無數字的目錄 &#060; ul &#062; ... &#060; /ul &#062;
-              </li>
-              <li>
-                目錄中的選項 &#060; li &#062; ... &#060; /li &#062;
-              </li>
-            </ul>
+            <h1>基礎語法</h1>
+            <table>
+              <thead>
+                <tr>
+                  <th>Syntax</th>
+                  <th>Purpose</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>&#060; h1 &#062;...&#060; /h1 &#062;</td>
+                  <td>標題</td>
+                </tr>
+                <tr>
+                  <td>&#060; p &#062;...&#060; /p &#062;</td>
+                  <td>一行</td>
+                </tr>
+                <tr>
+                  <td>&#060; span &#062;</td>
+                  <td>不換行</td>
+                </tr>
+                <tr>
+                  <td>&#060; ol &#062;...&#060; /ol &#062;</td>
+                  <td>有數字的list</td>
+                </tr>
+                <tr>
+                  <td>&#060; ul &#062;...&#060; /ul &#062;</td>
+                  <td>無數字的list</td>
+                </tr>
+                <tr>
+                  <td>&#060; li &#062;...&#060; /li &#062;</td>
+                  <td>list中的選項</td>
+                </tr>
+                <tr>
+                  <td>&#060; a &#062;...&#060; /a &#062;</td>
+                  <td>list中的選項</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section>
+            <h1>進階語法</h1>
+            <table>
+              <thead>
+                <tr>
+                  <th>Syntax</th>
+                  <th>Purpose</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>&#060; section &#062;</td>
+                  <td>每一頁面(or章節)</td>
+                </tr>
+                <tr>
+                  <td>&#060; table &#062;</td>
+                  <td>製作表格</td>
+                </tr>
+                <tr>
+                  <td>&#060; thead &#062;</td>
+                  <td>表格內的所有標頭</td>
+                </tr>
+                <tr>
+                  <td>&#060; th &#062;</td>
+                  <td>每一個標頭</td>
+                </tr>
+                <tr>
+                  <td>&#060; tbody &#062;</td>
+                  <td>表格內所有內容</td>
+                </tr>
+                <tr>
+                  <td>&#060; tr &#062;</td>
+                  <td>以橫列顯示表格內容</td>
+                </tr>
+                <tr>
+                  <td>&#060; td &#062;</td>
+                  <td>每一格的內容</td>
+                </tr>
+              </tbody>
+            </table>
           </section>
         </section>
         <section>
@@ -122,26 +200,31 @@
             <h1>haml</h1>
           </section>
           <section>
-            <h1>Haml</h1>
+            <h1>haml</h1>
             <ul style='text-align: left;'>
               <li>
                 以Ruby環境寫出
               </li>
               <li>
-                優點: 快速編寫html
-              </li>
-              <li>
-                技巧
-                <ol>
-                  <li>
-                    利用縮排
-                  </li>
-                  <li>
-                    利用%代替<>
-                  </li>
-                </ol>
+                快速編寫html(縮排、%)
               </li>
             </ul>
+          </section>
+          <section>
+            <p style='color: orange; font-size: 48px;'>Demo code</p>
+            <img data-src='Hamldemocode.PNG'>
+          </section>
+          <section>
+            <p style='color: orange; font-size: 48px;'>Demo code</p>
+            <div style='float: left; width: 45%;'>
+              <pre><code>%h1 進階語法&#x000A;%table&#x000A;  %thead&#x000A;    %tr&#x000A;      %th Syntax&#x000A;      %th Purpose&#x000A;  %tbody&#x000A;    %tr&#x000A;      %td &amp;#060; section &amp;#062;&#x000A;      %td 每一頁面(or章節)&#x000A;    %tr&#x000A;      %td &amp;#060; table &amp;#062;&#x000A;      %td 製作表格&#x000A;    %tr&#x000A;      %td &amp;#060; thead &amp;#062;&#x000A;      %td 表格內的所有標頭&#x000A;    %tr&#x000A;      %td &amp;#060; th &amp;#062;&#x000A;      %td 每一個標頭&#x000A;    %tr&#x000A;      %td &amp;#060; tbody &amp;#062;&#x000A;      %td 表格內所有內容&#x000A;    %tr&#x000A;      %td &amp;#060; tr &amp;#062;&#x000A;      %td 以橫列顯示表格內容&#x000A;    %tr&#x000A;      %td &amp;#060; td &amp;#062;&#x000A;      %td 每一格的內容</code></pre>
+            </div>
+            <div style='float: right; width: 55%;'>
+              <pre><code>&lt;h1&gt;進階語法&lt;/h1&gt;&#x000A;&lt;table&gt;&#x000A;  &lt;thead&gt;&#x000A;    &lt;tr&gt;&#x000A;      &lt;th&gt;Syntax&lt;/th&gt;&#x000A;      &lt;th&gt;Purpose&lt;/th&gt;&#x000A;    &lt;/tr&gt;&#x000A;  &lt;/thead&gt;&#x000A;  &lt;tbody&gt;&#x000A;    &lt;tr&gt;&#x000A;      &lt;td&gt;&amp;#060; section &amp;#062;&lt;/td&gt;&#x000A;      &lt;td&gt;每一頁面(or章節)&lt;/td&gt;&#x000A;    &lt;/tr&gt;&#x000A;    &lt;tr&gt;&#x000A;      &lt;td&gt;&amp;#060; table &amp;#062;&lt;/td&gt;&#x000A;      &lt;td&gt;製作表格&lt;/td&gt;&#x000A;    &lt;/tr&gt;&#x000A;    &lt;tr&gt;&#x000A;      &lt;td&gt;&amp;#060; thead &amp;#062;&lt;/td&gt;&#x000A;      &lt;td&gt;表格內的所有標頭&lt;/td&gt;&#x000A;    &lt;/tr&gt;&#x000A;    &lt;tr&gt;&#x000A;      &lt;td&gt;&amp;#060; th &amp;#062;&lt;/td&gt;&#x000A;      &lt;td&gt;每一個標頭&lt;/td&gt;&#x000A;    &lt;/tr&gt;&#x000A;    &lt;tr&gt;&#x000A;      &lt;td&gt;&amp;#060; tbody &amp;#062;&lt;/td&gt;&#x000A;      &lt;td&gt;表格內所有內容&lt;/td&gt;&#x000A;    &lt;/tr&gt;&#x000A;    &lt;tr&gt;&#x000A;      &lt;td&gt;&amp;#060; tr &amp;#062;&lt;/td&gt;&#x000A;      &lt;td&gt;以橫列顯示表格內容&lt;/td&gt;&#x000A;    &lt;/tr&gt;&#x000A;    &lt;tr&gt;&#x000A;      &lt;td&gt;&amp;#060; td &amp;#062;&lt;/td&gt;&#x000A;      &lt;td&gt;每一格的內容&lt;/td&gt;&#x000A;    &lt;/tr&gt;&#x000A;  &lt;/tbody&gt;&#x000A;&lt;/table&gt;</code></pre>
+            </div>
+          </section>
+          <section>
+            <h2 style='color: orange;'>How to install haml</h2>
           </section>
         </section>
         <section>
@@ -152,7 +235,7 @@
             <h1>reveal.js</h1>
             <ul>
               <li>
-                It's free (open source)
+                It's open source
               </li>
               <li>
                 提供比ppt更多樣化的捲動方式(轉場效果)
@@ -164,6 +247,37 @@
                 就是用Html來做網頁式的簡報!
               </li>
             </ul>
+          </section>
+          <section>
+            <p style='color: orange; font-size: 48px;'>Now, Let's view the effect of reveal.js</p>
+          </section>
+          <section>
+            <h1 style='color: orange;'>Down</h1>
+            <p style='font-size: 48px;'>垂直向的下一頁</p>
+            <img data-src='arrowdown.png'>
+          </section>
+          <section>
+            <h1 style='color: orange;'>Up</h1>
+            <p style='font-size: 48px;'>垂直向的上一頁</p>
+            <img data-src='arrowup.png'>
+          </section>
+          <section>
+            <h1 style='color: orange;'>left / right</h1>
+            <p>
+              <span style='font-size: 48px;'>翻至左/右行</span>
+              <span style='color: red; font-size: 48px;'>最近一次</span>
+              <span style='font-size: 48px;'>瀏覽的頁面</span>
+            </p>
+            <p>
+              <span style='font-size: 48px;'>若未瀏覽過則翻至左/右行</span>
+              <span style='color:red; font-size: 48px;'>最上頁</span>
+            </p>
+            <div style='float: left; width: 50%;'>
+              <img data-src='arrowleft.png'>
+            </div>
+            <div style='float: right; width: 50%;'>
+              <img data-src='arrowright.png'>
+            </div>
           </section>
         </section>
         <section>
