@@ -95,7 +95,7 @@
                   <td>一行</td>
                 </tr>
                 <tr>
-                  <td>&#060; span &#062;</td>
+                  <td>&#060; span &#062;...&#060; /span &#062;</td>
                   <td>不換行</td>
                 </tr>
                 <tr>
@@ -132,7 +132,7 @@
                   <td>每一頁面(or章節)</td>
                 </tr>
                 <tr>
-                  <td>&#060; section &#062; &#060; section &#062;</td>
+                  <td>&#060; section &#062; &#060; /section &#062;</td>
                   <td>垂直分頁</td>
                 </tr>
                 <tr>
@@ -286,8 +286,10 @@
               <li>
                 雙擊index.html，就可以進入簡報囉>.0
               </li>
-              <img data-src='./pic/6.PNG'>
             </ul>
+            <div style='width: 75%; position: absolute; top: 70px; left: 120px;'>
+              <img data-src='./pic/6.PNG'>
+            </div>
           </section>
         </section>
         <section>
@@ -295,7 +297,7 @@
             <h1>reveal.js</h1>
           </section>
           <section>
-            <h2 style='color: orange;'>reveal.js</h2>
+            <h2 style='color: orange'>reveal.js</h2>
             <ul>
               <li>
                 It's open source
@@ -359,10 +361,10 @@
           </section>
           <section style='background-image:url(https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/10374456_10204215391095942_8788258423042005557_n.jpg?oh=9c71f4c2d0901d331dd99137bd6b5eda&amp;oe=56FC9914);'>
             <h1 style='color: orange;'>Image background</h1>
-            <p style='font-size: 72px; color: black;'>我是小黑蛋</p>
-            <p style='font-size: 72px; color: black;'>我最喜歡分數打很高</p>
-            <p style='font-size: 72px; color: black;'>沒有很多問題的爸爸</p>
-            <p style='font-size: 72px; color: black;'>啾咪><</p>
+            <p style='font-size: 72px; color: blue; font-weight: 800;'>我是小黑蛋</p>
+            <p style='font-size: 72px; color: blue; font-weight: 800;'>我最喜歡分數打很高</p>
+            <p style='font-size: 72px; color: blue; font-weight: 800;'>沒有很多問題的爸爸</p>
+            <p style='font-size: 72px; color: blue; font-weight: 800;'>啾咪><</p>
           </section>
           <section style='background-image:url(http://4.bp.blogspot.com/-Ey3jc-66PSs/VPcGp3H1XRI/AAAAAAAAEEA/09E2tZ85SEs/s1600/4.gif);'>
             <h1 style='color: orange;'>GIF Backgrounds</h1>
@@ -379,9 +381,7 @@
           </section>
           <section>
             <h2 style='color: orange;'>show code</h2>
-            <div style='float: right; width: 75%; font-size: 60px;'>
-              <pre><code>#include &lt;iostrem&gt;&#x000A;using namespace std;&#x000A;int main(){&#x000A;  cout&lt;&lt; &quot;hello world&quot;;&#x000A;}</code></pre>
-            </div>
+            <pre><code>#include &lt;iostream&gt;&#x000A;using namesapce std;&#x000A;int main(){&#x000A;    return 0;&#x000A;}</code></pre>
           </section>
           <section>
             <h2 style='color: orange;'>list 型態</h2>
@@ -533,13 +533,14 @@
       	controls: true,
       	progress: true,
         slideNumber: true,
+        history: true,
         center: true,
         keyboard: true,
         overview: true,
       
         // Bounds for smallest/largest possible scale to apply to content
-            minScale: 0.1,
-            maxScale: 1.0,
+        minScale: 0.1,
+        maxScale: 1.0,
       
       	transition: 'convex', // none/fade/slide/convex/concave/zoom
       

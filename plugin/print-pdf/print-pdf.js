@@ -1,4 +1,4 @@
-﻿/**
+/**
  * phantomjs script for printing presentations to PDF.
  *
  * Example:

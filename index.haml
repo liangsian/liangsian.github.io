@@ -74,7 +74,7 @@
                   %td &#060; p &#062;...&#060; /p &#062;
                   %td 一行
                 %tr
-                  %td &#060; span &#062;
+                  %td &#060; span &#062;...&#060; /span &#062;
                   %td 不換行
                 %tr
                   %td &#060; ol &#062;...&#060; /ol &#062;
@@ -100,7 +100,7 @@
                   %td &#060; section &#062;
                   %td 每一頁面(or章節)
                 %tr
-                  %td &#060; section &#062; &#060; section &#062;
+                  %td &#060; section &#062; &#060; /section &#062;
                   %td 垂直分頁
                 %tr
                   %td &#060; img &#062;
@@ -150,7 +150,7 @@
             %div{:style=>"float: left; width: 45%;"}
               %pre
                 %code
-                  =preserve do
+                  = preserve do
                     :escaped
                       %h1 進階語法
                       %table
@@ -183,7 +183,7 @@
             %div{:style=>"float: right; width: 55%;"}
               %pre
                 %code
-                  =preserve do
+                  = preserve do
                     :escaped
                       <h1>進階語法</h1>
                       <table>
@@ -275,13 +275,14 @@
             %ul{:style=> "text-align: left;"}
               %li 
                 雙擊index.html，就可以進入簡報囉>.0
+            %div{:style=> "width: 75%; position: absolute; top: 70px; left: 120px;"}
               %img{"data-src"=> "./pic/6.PNG"}
 
         %section
           %section
             %h1 reveal.js
           %section
-            %h2{:style=> "color: orange;"} reveal.js
+            %h2{:style=> "color: orange"} reveal.js
             %ul
               %li 
                 It's open source
@@ -329,10 +330,10 @@
             %p{:class=> "fragment highlight-blue"} 字體變藍
           %section{:style=> "background-image:url(https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/10374456_10204215391095942_8788258423042005557_n.jpg?oh=9c71f4c2d0901d331dd99137bd6b5eda&oe=56FC9914);"}
             %h1{:style=> "color: orange;"} Image background
-            %p{:style=> "font-size: 72px; color: black;"} 我是小黑蛋
-            %p{:style=> "font-size: 72px; color: black;"} 我最喜歡分數打很高
-            %p{:style=> "font-size: 72px; color: black;"} 沒有很多問題的爸爸
-            %p{:style=> "font-size: 72px; color: black;"} 啾咪><
+            %p{:style=> "font-size: 72px; color: blue; font-weight: 800;"} 我是小黑蛋
+            %p{:style=> "font-size: 72px; color: blue; font-weight: 800;"} 我最喜歡分數打很高
+            %p{:style=> "font-size: 72px; color: blue; font-weight: 800;"} 沒有很多問題的爸爸
+            %p{:style=> "font-size: 72px; color: blue; font-weight: 800;"} 啾咪><
           %section{:style=> "background-image:url(http://4.bp.blogspot.com/-Ey3jc-66PSs/VPcGp3H1XRI/AAAAAAAAEEA/09E2tZ85SEs/s1600/4.gif);"}
             %h1{:style=> "color: orange;"} GIF Backgrounds
             %p{:style=> "font-size: 72px; color: blue;"} 以GIF動圖
@@ -345,16 +346,15 @@
               %source{src: "joke.mp4", type: "video/mp4"}
           %section 
             %h2{:style=> "color: orange;"} show code
-            %div{:style=>"float: right; width: 75%; font-size: 60px;"}
-              %pre
-                %code
-                  =preserve do
-                    :escaped
-                      #include <iostrem>
-                      using namespace std;
-                      int main(){
-                        cout<< "hello world";
-                      }
+            %pre
+              %code
+                =preserve do
+                  :escaped
+                    #include <iostream>
+                    using namesapce std;
+                    int main(){
+                        return 0;
+                    }
           %section
             %h2{:style=> "color: orange;"} list 型態
             %div{:style=> "float: left; width: 50%;"}
@@ -472,13 +472,14 @@
       	controls: true,
       	progress: true,
         slideNumber: true,
+        history: true,
         center: true,
         keyboard: true,
         overview: true,
 
         // Bounds for smallest/largest possible scale to apply to content
-            minScale: 0.1,
-            maxScale: 1.0,
+        minScale: 0.1,
+        maxScale: 1.0,
 
       	transition: 'convex', // none/fade/slide/convex/concave/zoom
 

@@ -1,4 +1,4 @@
-﻿/* Default Print Stylesheet Template
+/* Default Print Stylesheet Template
    by Rob Glazebrook of CSSnewbie.com
    Last Updated: June 4, 2008
 
@@ -141,7 +141,7 @@
 	.reveal .slides section {
 		visibility: visible !important;
 		position: static !important;
-		width: auto !important;
+		width: 100% !important;
 		height: auto !important;
 		display: block !important;
 		overflow: visible !important;

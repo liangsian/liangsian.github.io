@@ -1,4 +1,4 @@
-﻿// Custom reveal.js integration
+// Custom reveal.js integration
 (function(){
 	var isEnabled = true;
 

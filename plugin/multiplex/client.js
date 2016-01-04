@@ -1,4 +1,4 @@
-﻿(function() {
+(function() {
 	var multiplex = Reveal.getConfig().multiplex;
 	var socketId = multiplex.id;
 	var socket = io.connect(multiplex.url);
@@ -8,6 +8,6 @@
 		if (data.socketId !== socketId) { return; }
 		if( window.location.host === 'localhost:1947' ) return;
 
-		Reveal.setState(data.state);
+		Reveal.slide(data.indexh, data.indexv, data.indexf, 'remote');
 	});
 }());

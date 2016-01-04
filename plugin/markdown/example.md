@@ -1,4 +1,4 @@
-﻿# Markdown Demo
+# Markdown Demo
 
 
 
