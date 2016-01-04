@@ -38,7 +38,7 @@
             <p style='text-align: left; font-size: 30px; line-height: 20px;'>Data: 2016/01/06</p>
           </section>
           <section>
-            <h2 style='color: green;'>
+            <h2 style='color: orange;'>
               introduction
             </h2>
             <ol>
@@ -62,42 +62,6 @@
               </li>
             </ol>
           </section>
-          <section>
-            <h1>setting</h1>
-            <a href='?transition=none#/transitions'>None</a>
-            -
-            <a href='?transition=fade#/transitions'>Fade</a>
-            -
-            <a href='?transition=slide#/transitions'>Slide</a>
-            -
-            <a href='?transition=convex#/transitions'>Convex</a>
-            -
-            <a href='?transition=concave#/transitions'>Concave</a>
-            -
-            <a href='?transition=zoom#/transitions'>Zoom</a>
-            <p></p>
-            <a href='#' onclick="document.getElementById('theme').setAttribute('href','./css/theme/black.css'); return false;">Black</a>
-            -
-            <a href='#' onclick="document.getElementById('theme').setAttribute('href','./css/theme/white.css'); return false;">White</a>
-            -
-            <a href='#' onclick="document.getElementById('theme').setAttribute('href','./css/theme/league.css'); return false;">League</a>
-            -
-            <a href='#' onclick="document.getElementById('theme').setAttribute('href','./css/theme/sky.css'); return false;">Sky</a>
-            -
-            <a href='#' onclick="document.getElementById('theme').setAttribute('href','./css/theme/beige.css'); return false;">Beige</a>
-            -
-            <a href='#' onclick="document.getElementById('theme').setAttribute('href','./css/theme/simple.css'); return false;">Simple</a>
-            <br>
-            <a href='#' onclick="document.getElementById('theme').setAttribute('href','./css/theme/serif.css'); return false;">Serif</a>
-            -
-            <a href='#' onclick="document.getElementById('theme').setAttribute('href','./css/theme/blood.css'); return false;">Blood</a>
-            -
-            <a href='#' onclick="document.getElementById('theme').setAttribute('href','./css/theme/night.css'); return false;">Night</a>
-            -
-            <a href='#' onclick="document.getElementById('theme').setAttribute('href','./css/theme/moon.css'); return false;">Moon</a>
-            -
-            <a href='#' onclick="document.getElementById('theme').setAttribute('href','./css/theme/solarized.css'); return false;">Solarized</a>
-          </section>
         </section>
         <section>
           <section>
@@ -105,7 +69,7 @@
             <h2>Relations</h2>
           </section>
           <section>
-            <img data-src='Relation.PNG'>
+            <img data-src='./pic/Relation.PNG'>
           </section>
         </section>
         <section>
@@ -154,7 +118,7 @@
             </table>
           </section>
           <section>
-            <h1>進階語法</h1>
+            <h1>基礎語法</h1>
             <table>
               <thead>
                 <tr>
@@ -167,6 +131,31 @@
                   <td>&#060; section &#062;</td>
                   <td>每一頁面(or章節)</td>
                 </tr>
+                <tr>
+                  <td>&#060; section &#062; &#060; section &#062;</td>
+                  <td>垂直分頁</td>
+                </tr>
+                <tr>
+                  <td>&#060; img &#062;</td>
+                  <td>插入圖片, 後接url</td>
+                </tr>
+                <tr>
+                  <td>&#060; a &#062;</td>
+                  <td>超連結, 後接url</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section>
+            <h1>進階語法</h1>
+            <table>
+              <thead>
+                <tr>
+                  <th>Syntax</th>
+                  <th>Purpose</th>
+                </tr>
+              </thead>
+              <tbody>
                 <tr>
                   <td>&#060; table &#062;</td>
                   <td>製作表格</td>
@@ -200,7 +189,7 @@
             <h1>haml</h1>
           </section>
           <section>
-            <h1>haml</h1>
+            <h2 style='color: orange;'>haml</h2>
             <ul style='text-align: left;'>
               <li>
                 以Ruby環境寫出
@@ -209,10 +198,6 @@
                 快速編寫html(縮排、%)
               </li>
             </ul>
-          </section>
-          <section>
-            <p style='color: orange; font-size: 48px;'>Demo code</p>
-            <img data-src='Hamldemocode.PNG'>
           </section>
           <section>
             <p style='color: orange; font-size: 48px;'>Demo code</p>
@@ -226,19 +211,97 @@
           <section>
             <h2 style='color: orange;'>How to install haml</h2>
           </section>
+          <section>
+            <ul style='text-align: left;'>
+              <li>
+                因為haml是以Ruby的環境寫成
+              </li>
+              <li>
+                所以我們得先下載Ruby
+              </li>
+              <li>
+                選擇一個適合自己電腦的ruby檔案
+              </li>
+              <img data-src='./pic/1.PNG'>
+            </ul>
+          </section>
+          <section>
+            <ul style='text-align: left;'>
+              <li>
+                開啟cmd確認ruby是否有安裝成功
+              </li>
+              <img data-src='./pic/2.PNG'>
+            </ul>
+          </section>
+          <section>
+            <ul style='text-align: left;'>
+              <li>
+                再確認是否有gem
+              </li>
+              <img data-src='./pic/3.PNG'>
+              <p style='color: orange;'>
+                gem是ruby的第三方套件管理程式，類似於Centos環境中的yum、Ubuntu的apt-get、Python的pip
+              </p>
+            </ul>
+          </section>
+          <section>
+            <h4>接下來找個自己喜歡的文字編輯器</h4>
+            <h4>就可以開始寫haml囉</h4>
+          </section>
+          <section>
+            <ul style='text-align: left;'>
+              <li>
+                因為網頁都是以html呈現
+              </li>
+              <li>
+                所以我們需要先把haml轉檔成html
+              </li>
+            </ul>
+          </section>
+          <section>
+            <ul style='text-align: left;'>
+              <li>
+                開啟cmd
+              </li>
+              <li>
+                鍵入 haml index.haml index.html    (index為檔案名稱)
+              </li>
+            </ul>
+            <img data-src='./pic/4.PNG'>
+          </section>
+          <section>
+            <ul style='text-align: left;'>
+              <li>
+                接下來在你的資料夾裡會有兩種檔案
+              </li>
+              <ol>
+                <li style='color: orange;'>index.haml</li>
+                <li style='color: orange;'>index.html</li>
+              </ol>
+              <img data-src='./pic/5.PNG'>
+            </ul>
+          </section>
+          <section>
+            <ul style='text-align: left;'>
+              <li>
+                雙擊index.html，就可以進入簡報囉>.0
+              </li>
+              <img data-src='./pic/6.PNG'>
+            </ul>
+          </section>
         </section>
         <section>
           <section>
             <h1>reveal.js</h1>
           </section>
           <section>
-            <h1>reveal.js</h1>
+            <h2 style='color: orange;'>reveal.js</h2>
             <ul>
               <li>
                 It's open source
               </li>
               <li>
-                提供比ppt更多樣化的捲動方式(轉場效果)
+                提供比ppt更具架構化的捲動方式
               </li>
               <li>
                 講者可以更節省時間的在投影片上顯示出編排的很漂亮的程式片段
@@ -254,12 +317,12 @@
           <section>
             <h1 style='color: orange;'>Down</h1>
             <p style='font-size: 48px;'>垂直向的下一頁</p>
-            <img data-src='arrowdown.png'>
+            <img data-src='./pic/arrowdown.png'>
           </section>
           <section>
             <h1 style='color: orange;'>Up</h1>
             <p style='font-size: 48px;'>垂直向的上一頁</p>
-            <img data-src='arrowup.png'>
+            <img data-src='./pic/arrowup.png'>
           </section>
           <section>
             <h1 style='color: orange;'>left / right</h1>
@@ -273,11 +336,156 @@
               <span style='color:red; font-size: 48px;'>最上頁</span>
             </p>
             <div style='float: left; width: 50%;'>
-              <img data-src='arrowleft.png'>
+              <img data-src='./pic/arrowleft.png'>
             </div>
             <div style='float: right; width: 50%;'>
-              <img data-src='arrowright.png'>
+              <img data-src='./pic/arrowright.png'>
             </div>
+          </section>
+          <section>
+            <h2 style='color: orange;'>Fragment Styles</h2>
+            <p>
+              <span class='fragment'>分</span>
+              <span class='fragment'>段</span>
+              <span class='fragment'>出</span>
+              <span class='fragment'>現</span>
+            </p>
+            <p class='fragment grow'>變大</p>
+            <p class='fragment shrink'>變小</p>
+            <p class='fragment fade-out'>消失</p>
+            <p class='fragment current-visible'>目前可見</p>
+            <p class='fragment highlight-red'>字體變紅</p>
+            <p class='fragment highlight-blue'>字體變藍</p>
+          </section>
+          <section style='background-image:url(https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/10374456_10204215391095942_8788258423042005557_n.jpg?oh=9c71f4c2d0901d331dd99137bd6b5eda&amp;oe=56FC9914);'>
+            <h1 style='color: orange;'>Image background</h1>
+            <p style='font-size: 72px; color: black;'>我是小黑蛋</p>
+            <p style='font-size: 72px; color: black;'>我最喜歡分數打很高</p>
+            <p style='font-size: 72px; color: black;'>沒有很多問題的爸爸</p>
+            <p style='font-size: 72px; color: black;'>啾咪><</p>
+          </section>
+          <section style='background-image:url(http://4.bp.blogspot.com/-Ey3jc-66PSs/VPcGp3H1XRI/AAAAAAAAEEA/09E2tZ85SEs/s1600/4.gif);'>
+            <h1 style='color: orange;'>GIF Backgrounds</h1>
+            <p style='font-size: 72px; color: blue;'>以GIF動圖</p>
+            <p style='font-size: 72px; color: blue;'>當作</p>
+            <p style='font-size: 72px; color: blue;'>background-image</p>
+            <p style='font-size: 72px; color: blue;'>顯示</p>
+          </section>
+          <section>
+            <h2 style='color: orange;'>insert video</h2>
+            <video controls='' height='50%' name='media' width='50%'>
+              <source src='joke.mp4' type='video/mp4'>
+            </video>
+          </section>
+          <section>
+            <h2 style='color: orange;'>show code</h2>
+            <div style='float: right; width: 75%; font-size: 60px;'>
+              <pre><code>#include &lt;iostrem&gt;&#x000A;using namespace std;&#x000A;int main(){&#x000A;  cout&lt;&lt; &quot;hello world&quot;;&#x000A;}</code></pre>
+            </div>
+          </section>
+          <section>
+            <h2 style='color: orange;'>list 型態</h2>
+            <div style='float: left; width: 50%;'>
+              <ul>
+                <li>看看</li>
+                <li>這是個沒有數字的list</li>
+              </ul>
+            </div>
+            <div style='float: right; width: 50%;'>
+              <ol>
+                <li>看看</li>
+                <li>這就有了吧</li>
+              </ol>
+            </div>
+          </section>
+          <section>
+            <h2 style='color: orange;'>表格</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>number</th>
+                  <th>item</th>
+                  <th>price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>chocolate</td>
+                  <td>$500</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>lamp</td>
+                  <td>$1500</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>fan</td>
+                  <td>$100</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section>
+            <h2 style='color: orange;'>演講者視角</h2>
+            <div style='float: left; width: 40%;'>
+              <ul>
+                <li style='color: red;'>只有演講者看的到!</li>
+                <li>包含js以及time!</li>
+                <li>快捷鍵: s</li>
+              </ul>
+            </div>
+            <div style='float: right; width: 60%;'>
+              <img data-src='./pic/speakerview.PNG'>
+            </div>
+          </section>
+          <section>
+            <h2 style='color: orange;'>黑屏</h2>
+            <p>快捷鍵: b</p>
+          </section>
+          <section>
+            <h2 style='color: orange;'>view structure</h2>
+            <p>查看整個簡報的架構</p>
+            <p>快捷鍵: esc</p>
+          </section>
+          <section>
+            <h2 style='color: orange;'>change theme</h2>
+            <a href='#' onclick="document.getElementById('theme').setAttribute('href','./css/theme/black.css'); return false;">Black</a>
+            -
+            <a href='#' onclick="document.getElementById('theme').setAttribute('href','./css/theme/white.css'); return false;">White</a>
+            -
+            <a href='#' onclick="document.getElementById('theme').setAttribute('href','./css/theme/league.css'); return false;">League</a>
+            -
+            <a href='#' onclick="document.getElementById('theme').setAttribute('href','./css/theme/sky.css'); return false;">Sky</a>
+            -
+            <a href='#' onclick="document.getElementById('theme').setAttribute('href','./css/theme/beige.css'); return false;">Beige</a>
+            -
+            <a href='#' onclick="document.getElementById('theme').setAttribute('href','./css/theme/simple.css'); return false;">Simple</a>
+            <br>
+            <a href='#' onclick="document.getElementById('theme').setAttribute('href','./css/theme/serif.css'); return false;">Serif</a>
+            -
+            <a href='#' onclick="document.getElementById('theme').setAttribute('href','./css/theme/blood.css'); return false;">Blood</a>
+            -
+            <a href='#' onclick="document.getElementById('theme').setAttribute('href','./css/theme/night.css'); return false;">Night</a>
+            -
+            <a href='#' onclick="document.getElementById('theme').setAttribute('href','./css/theme/moon.css'); return false;">Moon</a>
+            -
+            <a href='#' onclick="document.getElementById('theme').setAttribute('href','./css/theme/solarized.css'); return false;">Solarized</a>
+          </section>
+          <section>
+            <h2 style='color: orange;'>background transitions</h2>
+            <a href='?transition=none#/transitions'>None</a>
+            -
+            <a href='?transition=fade#/transitions'>Fade</a>
+            -
+            <a href='?transition=slide#/transitions'>Slide</a>
+            -
+            <a href='?transition=convex#/transitions'>Convex</a>
+            -
+            <a href='?transition=concave#/transitions'>Concave</a>
+            -
+            <a href='?transition=zoom#/transitions'>Zoom</a>
           </section>
         </section>
         <section>
@@ -286,10 +494,10 @@
           </section>
           <section>
             <h1>Github.io</h1>
-            <ol>
+            <ul>
               <li>提供靜態網頁空間</li>
-              <li>XXXXX.github.io (XXXX為檔案在github上的檔名)</li>
-            </ol>
+              <li>XXXXX.github.io</li>
+            </ul>
           </section>
         </section>
         <section>
@@ -307,11 +515,11 @@
         </section>
         <section>
           <section>
-            <h1>Q & A</h1>
-          </section>
-          <section>
             <h1>END</h1>
             <p>Thank you for listening.</p>
+          </section>
+          <section>
+            <h1>Q & A</h1>
           </section>
         </section>
       </div>

@@ -34,7 +34,7 @@
             %p{:style => "text-align: left; font-size: 30px; line-height: 20px;"} Adviser: 林楚迪
             %p{:style => "text-align: left; font-size: 30px; line-height: 20px;"} Data: 2016/01/06
           %section
-            %h2{:style=> "color: green;"} 
+            %h2{:style=> "color: orange;"} 
               introduction
             %ol
               %li 
@@ -49,47 +49,13 @@
                 Github.io
               %li 
                 Faced Problem 
-          %section
-            %h1 setting
-            %a{:href=> "?transition=none#/transitions"} None
-            \-
-            %a{:href=> "?transition=fade#/transitions"} Fade
-            \-
-            %a{:href=> "?transition=slide#/transitions"} Slide
-            \-
-            %a{:href=> "?transition=convex#/transitions"} Convex
-            \-
-            %a{:href=> "?transition=concave#/transitions"} Concave
-            \-
-            %a{:href=> "?transition=zoom#/transitions"} Zoom
-            %p
-            %a{:href=> "#", :onclick => "document.getElementById('theme').setAttribute('href','./css/theme/black.css'); return false;"} Black
-            \-
-            %a{:href=> "#", :onclick => "document.getElementById('theme').setAttribute('href','./css/theme/white.css'); return false;"} White
-            \-
-            %a{:href=> "#", :onclick => "document.getElementById('theme').setAttribute('href','./css/theme/league.css'); return false;"} League
-            \-
-            %a{:href=> "#", :onclick => "document.getElementById('theme').setAttribute('href','./css/theme/sky.css'); return false;"} Sky
-            \-
-            %a{:href=> "#", :onclick => "document.getElementById('theme').setAttribute('href','./css/theme/beige.css'); return false;"} Beige
-            \-
-            %a{:href=> "#", :onclick => "document.getElementById('theme').setAttribute('href','./css/theme/simple.css'); return false;"} Simple
-            %br/
-            %a{:href=> "#", :onclick => "document.getElementById('theme').setAttribute('href','./css/theme/serif.css'); return false;"} Serif
-            \-
-            %a{:href=> "#", :onclick => "document.getElementById('theme').setAttribute('href','./css/theme/blood.css'); return false;"} Blood
-            \-
-            %a{:href=> "#", :onclick => "document.getElementById('theme').setAttribute('href','./css/theme/night.css'); return false;"} Night
-            \-
-            %a{:href=> "#", :onclick => "document.getElementById('theme').setAttribute('href','./css/theme/moon.css'); return false;"} Moon
-            \-
-            %a{:href=> "#", :onclick => "document.getElementById('theme').setAttribute('href','./css/theme/solarized.css'); return false;"} Solarized
+            
         %section
           %section
             %h2 Html + CSS + Reveal.js 
             %h2 Relations
           %section
-            %img{"data-src"=> "Relation.PNG"}
+            %img{"data-src"=> "./pic/Relation.PNG"}
         %section
           %section
             %h1 Html
@@ -123,7 +89,7 @@
                   %td &#060; a &#062;...&#060; /a &#062;
                   %td list中的選項
           %section
-            %h1 進階語法
+            %h1 基礎語法
             %table
               %thead
                 %tr
@@ -133,6 +99,23 @@
                 %tr
                   %td &#060; section &#062;
                   %td 每一頁面(or章節)
+                %tr
+                  %td &#060; section &#062; &#060; section &#062;
+                  %td 垂直分頁
+                %tr
+                  %td &#060; img &#062;
+                  %td 插入圖片, 後接url
+                %tr
+                  %td &#060; a &#062;
+                  %td 超連結, 後接url
+          %section
+            %h1 進階語法
+            %table
+              %thead
+                %tr
+                  %th Syntax
+                  %th Purpose
+              %tbody
                 %tr
                   %td &#060; table &#062;
                   %td 製作表格
@@ -156,15 +139,12 @@
           %section 
             %h1 haml
           %section
-            %h1 haml
+            %h2{:style=> "color: orange;"} haml
             %ul{:style=> "text-align: left;"}
               %li 
                 以Ruby環境寫出
               %li 
                 快速編寫html(縮排、%)
-          %section
-            %p{:style=> "color: orange; font-size: 48px;"} Demo code
-            %img{"data-src"=> "Hamldemocode.PNG"}
           %section
             %p{:style=> "color: orange; font-size: 48px;"} Demo code
             %div{:style=>"float: left; width: 45%;"}
@@ -246,17 +226,67 @@
                       </table>
           %section
             %h2{:style=> "color: orange;"} How to install haml
+          %section
+            %ul{:style=> "text-align: left;"}
+              %li
+                因為haml是以Ruby的環境寫成
+              %li
+                所以我們得先下載Ruby
+              %li
+                選擇一個適合自己電腦的ruby檔案
+              %img{"data-src"=> "./pic/1.PNG"}
+          %section
+            %ul{:style=> "text-align: left;"}
+              %li
+                開啟cmd確認ruby是否有安裝成功
+              %img{"data-src"=> "./pic/2.PNG"}
+          %section
+            %ul{:style=> "text-align: left;"}
+              %li
+                再確認是否有gem
+              %img{"data-src"=> "./pic/3.PNG"}
+              %p{:style=> "color: orange;"}
+                gem是ruby的第三方套件管理程式，類似於Centos環境中的yum、Ubuntu的apt-get、Python的pip
+          %section
+            %h4 接下來找個自己喜歡的文字編輯器
+            %h4 就可以開始寫haml囉
+          %section
+            %ul{:style=> "text-align: left;"}
+              %li
+                因為網頁都是以html呈現
+              %li
+                所以我們需要先把haml轉檔成html
+          %section
+            %ul{:style=> "text-align: left;"}
+              %li
+                開啟cmd
+              %li
+                鍵入 haml index.haml index.html    (index為檔案名稱)
+            %img{"data-src"=> "./pic/4.PNG"}
+          %section
+            %ul{:style=> "text-align: left;"}
+              %li
+                接下來在你的資料夾裡會有兩種檔案
+              %ol
+                %li{:style=> "color: orange;"} index.haml
+                %li{:style=> "color: orange;"} index.html
+              %img{"data-src"=> "./pic/5.PNG"}
+          %section
+            %ul{:style=> "text-align: left;"}
+              %li 
+                雙擊index.html，就可以進入簡報囉>.0
+              %img{"data-src"=> "./pic/6.PNG"}
 
         %section
           %section
             %h1 reveal.js
           %section
-            %h1 reveal.js
+            %h2{:style=> "color: orange;"} reveal.js
             %ul
               %li 
                 It's open source
               %li 
-                提供比ppt更多樣化的捲動方式(轉場效果)
+                提供比ppt更具架構化的捲動方式
               %li
                 講者可以更節省時間的在投影片上顯示出編排的很漂亮的程式片段
               %li
@@ -266,11 +296,11 @@
           %section
             %h1{:style=> "color: orange;"} Down
             %p{:style=> "font-size: 48px;"} 垂直向的下一頁
-            %img{"data-src"=>"arrowdown.png"}
+            %img{"data-src"=>"./pic/arrowdown.png"}
           %section
             %h1{:style=> "color: orange;"} Up
             %p{:style=> "font-size: 48px;"} 垂直向的上一頁
-            %img{"data-src"=>"arrowup.png"}
+            %img{"data-src"=>"./pic/arrowup.png"}
           %section
             %h1{:style=> "color: orange;"} left / right
             %p
@@ -281,17 +311,142 @@
               %span{:style=> "font-size: 48px;"} 若未瀏覽過則翻至左/右行
               %span{:style=> "color:red; font-size: 48px;"} 最上頁
             %div{:style=> "float: left; width: 50%;"}
-              %img{"data-src"=> "arrowleft.png"}
+              %img{"data-src"=> "./pic/arrowleft.png"}
             %div{:style=> "float: right; width: 50%;"}
-              %img{"data-src"=> "arrowright.png"}
+              %img{"data-src"=> "./pic/arrowright.png"}
+          %section
+            %h2{:style=> "color: orange;"} Fragment Styles
+            %p
+              %span{:class=> "fragment"} 分  
+              %span{:class=> "fragment"} 段  
+              %span{:class=> "fragment"} 出  
+              %span{:class=> "fragment"} 現
+            %p{:class=> "fragment grow"} 變大
+            %p{:class=> "fragment shrink"} 變小
+            %p{:class=> "fragment fade-out"} 消失
+            %p{:class=> "fragment current-visible"} 目前可見
+            %p{:class=> "fragment highlight-red"} 字體變紅
+            %p{:class=> "fragment highlight-blue"} 字體變藍
+          %section{:style=> "background-image:url(https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/10374456_10204215391095942_8788258423042005557_n.jpg?oh=9c71f4c2d0901d331dd99137bd6b5eda&oe=56FC9914);"}
+            %h1{:style=> "color: orange;"} Image background
+            %p{:style=> "font-size: 72px; color: black;"} 我是小黑蛋
+            %p{:style=> "font-size: 72px; color: black;"} 我最喜歡分數打很高
+            %p{:style=> "font-size: 72px; color: black;"} 沒有很多問題的爸爸
+            %p{:style=> "font-size: 72px; color: black;"} 啾咪><
+          %section{:style=> "background-image:url(http://4.bp.blogspot.com/-Ey3jc-66PSs/VPcGp3H1XRI/AAAAAAAAEEA/09E2tZ85SEs/s1600/4.gif);"}
+            %h1{:style=> "color: orange;"} GIF Backgrounds
+            %p{:style=> "font-size: 72px; color: blue;"} 以GIF動圖
+            %p{:style=> "font-size: 72px; color: blue;"} 當作
+            %p{:style=> "font-size: 72px; color: blue;"} background-image
+            %p{:style=> "font-size: 72px; color: blue;"} 顯示
+          %section
+            %h2{:style=> "color: orange;"} insert video
+            %video{ controls: "", name: "media", width: "50%", height: "50%"}
+              %source{src: "joke.mp4", type: "video/mp4"}
+          %section 
+            %h2{:style=> "color: orange;"} show code
+            %div{:style=>"float: right; width: 75%; font-size: 60px;"}
+              %pre
+                %code
+                  =preserve do
+                    :escaped
+                      #include <iostrem>
+                      using namespace std;
+                      int main(){
+                        cout<< "hello world";
+                      }
+          %section
+            %h2{:style=> "color: orange;"} list 型態
+            %div{:style=> "float: left; width: 50%;"}
+              %ul
+                %li 看看
+                %li 這是個沒有數字的list
+            %div{:style=> "float: right; width: 50%;"}
+              %ol
+                %li 看看
+                %li 這就有了吧
+          %section
+            %h2{:style=> "color: orange;"} 表格
+            %table
+              %thead
+                %tr
+                  %th number
+                  %th item
+                  %th price
+              %tbody
+                %tr
+                  %td 1
+                  %td chocolate
+                  %td $500
+                %tr
+                  %td 2
+                  %td lamp
+                  %td $1500
+                %tr
+                  %td 3
+                  %td fan
+                  %td $100
+          %section
+            %h2{:style=> "color: orange;"} 演講者視角
+            %div{:style=> "float: left; width: 40%;"}
+              %ul
+                %li{:style=> "color: red;"} 只有演講者看的到!
+                %li 包含js以及time!
+                %li 快捷鍵: s
+            %div{:style=> "float: right; width: 60%;"}
+              %img{"data-src"=> "./pic/speakerview.PNG"}
+          %section
+            %h2{:style=> "color: orange;"} 黑屏
+            %p 快捷鍵: b
+          %section
+            %h2{:style=> "color: orange;"} view structure
+            %p 查看整個簡報的架構
+            %p 快捷鍵: esc
+          %section
+            %h2{:style=> "color: orange;"} change theme
+            %a{:href=> "#", :onclick => "document.getElementById('theme').setAttribute('href','./css/theme/black.css'); return false;"} Black
+            \-
+            %a{:href=> "#", :onclick => "document.getElementById('theme').setAttribute('href','./css/theme/white.css'); return false;"} White
+            \-
+            %a{:href=> "#", :onclick => "document.getElementById('theme').setAttribute('href','./css/theme/league.css'); return false;"} League
+            \-
+            %a{:href=> "#", :onclick => "document.getElementById('theme').setAttribute('href','./css/theme/sky.css'); return false;"} Sky
+            \-
+            %a{:href=> "#", :onclick => "document.getElementById('theme').setAttribute('href','./css/theme/beige.css'); return false;"} Beige
+            \-
+            %a{:href=> "#", :onclick => "document.getElementById('theme').setAttribute('href','./css/theme/simple.css'); return false;"} Simple
+            %br/
+            %a{:href=> "#", :onclick => "document.getElementById('theme').setAttribute('href','./css/theme/serif.css'); return false;"} Serif
+            \-
+            %a{:href=> "#", :onclick => "document.getElementById('theme').setAttribute('href','./css/theme/blood.css'); return false;"} Blood
+            \-
+            %a{:href=> "#", :onclick => "document.getElementById('theme').setAttribute('href','./css/theme/night.css'); return false;"} Night
+            \-
+            %a{:href=> "#", :onclick => "document.getElementById('theme').setAttribute('href','./css/theme/moon.css'); return false;"} Moon
+            \-
+            %a{:href=> "#", :onclick => "document.getElementById('theme').setAttribute('href','./css/theme/solarized.css'); return false;"} Solarized
+          %section
+            %h2{:style=> "color: orange;"} background transitions
+            %a{:href=> "?transition=none#/transitions"} None
+            \-
+            %a{:href=> "?transition=fade#/transitions"} Fade
+            \-
+            %a{:href=> "?transition=slide#/transitions"} Slide
+            \-
+            %a{:href=> "?transition=convex#/transitions"} Convex
+            \-
+            %a{:href=> "?transition=concave#/transitions"} Concave
+            \-
+            %a{:href=> "?transition=zoom#/transitions"} Zoom
+
         %section
           %section
             %h1 github.io
           %section
             %h1 Github.io
-            %ol
+            %ul
               %li 提供靜態網頁空間
-              %li XXXXX.github.io (XXXX為檔案在github上的檔名)
+              %li XXXXX.github.io
 
         %section
           %section
@@ -304,10 +459,10 @@
               %li 排版不美觀 
         %section
           %section
-            %h1 Q & A
-          %section
             %h1 END
             %p Thank you for listening.
+          %section
+            %h1 Q & A
     %script{:src => "./lib/js/head.min.js"}
     %script{:src => "./js/reveal.js"}
     :javascript
